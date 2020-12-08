@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="static/fonts/BebasNeue.css">
+    <link rel="stylesheet" href="static/fonts/Montserrat.css">
+    <link rel="stylesheet" href="static/css/master.css">
+
+
+    <script>
+      /* Локализация datepicker */
+      $.datepicker.regional['ru'] = {
+      	closeText: 'Закрыть',
+      	prevText: 'Предыдущий',
+      	nextText: 'Следующий',
+      	currentText: 'Сегодня',
+      	monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+      	monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+      	dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+      	dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+      	dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+      	weekHeader: 'Не',
+      	dateFormat: 'dd.mm.yy',
+      	firstDay: 1,
+      	isRTL: false,
+      	showMonthAfterYear: false,
+      	yearSuffix: ''
+      };
+      $.datepicker.setDefaults($.datepicker.regional['ru']);
+    </script>
+  </head>
+  <body>
+    <header class="header_index">
+      <!-- <nav class="mobile-menu">
+        <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+        <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+        <div class="mobile-menu__container">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Home</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">About us</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Work</a></li>
+            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Contacts</a></li>
+          </ul>
+        </div>
+      </nav> -->
+      <nav class="header__nav mobile-menu">
+
+        <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+        <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+        <div class="mobile-menu__container">
+          <ul class="menu mobile-menu__list">
+            <li class="menu__item mobile-menu__item"><a href="#" class="">Об отеле</a></li>
+            <li class="menu__item mobile-menu__item"><a href="#" class="">Номера и цены</a></li>
+            <li class="menu__item mobile-menu__item"><a href="#" class="">Мероприятия</a></li>
+            <li class="menu__item mobile-menu__item"><a href="#" class="">Контакты</a></li>
+            <li class="menu__item mobile-menu__item"><a class="item__phone" href="#">+7 (495) 005-61-59</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__title">
+        <div class="title__logo">
+          <div class="title__logo_l">
+            <div class="title__text_top">
+              Отель-заповедник
+            </div>
+            <img src="/static/images/title_l.png" alt="" class="">
+            <!-- Буква "Л" -->
+          </div>
+          <div class="title__logo_echoe">
+            <!-- Буквы "есное" -->
+            <div class="title__text_top title__text_top_mobile">
+              Отель-заповедник
+            </div>
+            <img src="/static/images/title_echoe.png" alt="" class="">
+          </div>
+        </div>
+        <div class="title__text_bottom">
+          Премиальный отдых в подмосковье
+        </div>
+      </div>
+      <div class="header__description">
+        <div class="description__block_content">
+          <div class="price">
+            <div class="price__from">
+              От
+            </div>
+            <div class="price__value">
+              5 500 ₽
+            </div>
+            <div class="price__count">
+              в сутки
+            </div>
+          </div>
+          <div class="description__block_text">
+            4х разовое питание и all inclusive.<br>
+            Собственное подсобное хозяй,<br>
+            бассейн, баня, конный двор<br>
+            и контактный зоопарк.
+          </div>
+        </div>
+      </div>
+
+
+      <form class="header__form">
+        <div class="header__form_wrapper">
+          <div class="header__form_content">
+            <div class="reindeer">
+
+              <svg id="reindeer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" viewBox="0 0 1253 1597" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <clipPath id='clip_2' >
+                    <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #eee;
+                      fill-rule: evenodd;
+                      filter: url(#filter);
+                    }
+                  </style>
+                  <filter id="filter" x="639" y="750" width="1253" height="1597" filterUnits="userSpaceOnUse">
+                    <feOffset result="offset" dy="7" in="SourceAlpha"/>
+                    <feGaussianBlur result="blur" stdDeviation="4"/>
+                    <feFlood result="flood" flood-color="#575b7c" flood-opacity="0.1"/>
+                    <feComposite result="composite" operator="in" in2="blur"/>
+                    <feBlend result="blend" in="SourceGraphic"/>
+                  </filter>
+                </defs>
+                <path class="cls-1" d="M994,2053c0.553,17.88,25.39,152.99,102,209,96.01,70.2,249.09,61.65,261,61,21.42-1.17,46-28,46-28s80.21-17.15,54-121c0.08-53.67-17.9-103.43,5.46-149.09,13.96-11.32,18.56-34.14,18.56-34.14s111.35,10.11,214.57-15.59c37.43,4.22,134.88,21.66,152.94-48.98,8.59-.03,15.39-8.38,11.47-23.2,4.92-6.79,23.03-21.2,11.55-42.86-3.59-5.82-12.91-17.22-21.53-18.56-7.91-5.25-48.45-39.27-66.82-46.02-18.43-16.46-95.33-76.78-106.17-86.09s-93.15-94.51-113.6-101.69c-8.52-9.88-61.03-75.46-73.5-79.42,10.17-3.87,68.57-23.65,90.58-72.74,24.72-21.74,54.39-59.71,37.87-138.79-2.75-7.73-8.38-11.6-8.91,5.19s-17.15,66.74-21.54,76.45c-3.38-16.54-10.4-79.66-50.48-80.16-10.81-.87-8.34,7.34-0.74,10.39s19.85,11.62,20.78,35.63,6.05,62.59-4.45,68.29-90.34,37.08-125.47,40.08c-34.31-7.9-94.29-27.47-94.29-27.47s81.95-57.31,72.01-101.68c-3.39-.94-5.65,13.62-15.59,20.04s-86.78,60.9-98.74,62.35c-9.58-11.46-33.65-39.45-31.19-55.67,6.07-5.11,25.32-28.82,40.84-66.06,18.26-43.85,31.68-102.99,17.07-121.73-9.89,12.15-19.03,45.19-23.75,57.9s-29.43,81.25-51.23,92.03c-25.95,18.86-70.91,8.32-89.84-3.71,2.25-26.55,12.37-96.03,14.85-113.56s14.84-80.05,15.59-109.1c3.98-26.54,11.71-110.975,13.36-118.019,3.26-9.181,11.48-44.01,7.43-65.316-1.05-20.36-.11-37.7-7.43-37.111s-6.31,30.682-8.9,42.307-17.37,61.012-25.25,91.289-19.11,181.12-54.94,181.11c-34.29-10.76-39.99-40.85-42.32-60.86,4.27-30.93,5.2-68.29,5.2-68.29s9.76-166.817,11.13-189.268c5.8-28.478,47.52-112.818,47.52-112.818s2.9-15.812-11.14-9.649c-3.96,6.154-7.42,12.618-7.42,12.618s-7.53-14.084-18.56-2.969c-3.4,9.743-7.22,14.941-12.62,23.751s-22.21,49.534-32.67,61.6-27.87,35.391-36.38,35.627-34.024-3.234-42.32-20.04-11.879-24.494-11.879-24.494-10.207-4.162-8.909,5.2,1.182,19.325,11.137,25.236c-16.942-7.8-47.9-36.606-51.972-34.885s-23.319,34.877,70.533,75.707c6.152,4.948,27.99,35.66,23.76,67.543-9.293,28.68-16.85,31.69-19.306,37.11s-3.356,21.6-14.106,27.46-30.694,17.57-50.487-4.45-23.974-28.72-25.243-37.85-16.959-102.412-6.682-135.831,36.126-69.617,28.213-80.161c-12.655,2.373-27.649,26.951-33.41,34.143s-15.59,15.452-41.577,97.974C828.617,956.02,817.069,997.39,795,1015.48c-23.934,10.52-61.665,26.99-80.927,26.72s-45.289-13.36-45.289-13.36l-8.167,11.88,6.682,8.91s36.442,21.7,65.335,23c29.439,4.38,53.577,20.33,61.623,40.09s8.91,17.07,8.91,17.07,35.984,62.06-31.183,84.61c-56.425,12.22-57.168-1.48-57.168-1.48s-36.881-92.96-40.835-89.81c-11.689,9.91,6.544,71.81,6.682,96.49-0.532,39.07-31.738,51.59-25.986,77.93,4.575,9.76,16.965-16.74,42.32-14.84s53.713,2.71,115.079-8.17c73.9,4.64,167.618,5.79,199.714,31.17s53.81,40.93,60.89,44.54c7.67,13.97,7.15,69.19,146.26,121.72a248.57,248.57,0,0,1,37.86,37.86l-68.3-15.59s-62.93-47.79-92.81-25.98c-26.24-13.74-64.92-35.54-72.02-5.19,12.14,38.8,16.03,76.51,60.88,122.46s69.48,80.08,82.42,84.62c-13.21,26.17-85.42,228.28-113.6,282.05S992.754,2012.71,994,2053Z" transform="translate(-100 -100) scale(0.2)"/>
+                <!-- translate(-639 -750) -->
+                </clipPath>
+              </defs>
+              </svg>
+              <svg id="reindeer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" viewBox="0 0 1253 1597" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <clipPath id='clip_1' >
+                    <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #eee;
+                      fill-rule: evenodd;
+                      filter: url(#filter);
+                    }
+                  </style>
+                  <filter id="filter" x="639" y="750" width="1253" height="1597" filterUnits="userSpaceOnUse">
+                    <feOffset result="offset" dy="7" in="SourceAlpha"/>
+                    <feGaussianBlur result="blur" stdDeviation="4"/>
+                    <feFlood result="flood" flood-color="#575b7c" flood-opacity="0.1"/>
+                    <feComposite result="composite" operator="in" in2="blur"/>
+                    <feBlend result="blend" in="SourceGraphic"/>
+                  </filter>
+                </defs>
+                <path class="cls-1" d="M994,2053c0.553,17.88,25.39,152.99,102,209,96.01,70.2,249.09,61.65,261,61,21.42-1.17,46-28,46-28s80.21-17.15,54-121c0.08-53.67-17.9-103.43,5.46-149.09,13.96-11.32,18.56-34.14,18.56-34.14s111.35,10.11,214.57-15.59c37.43,4.22,134.88,21.66,152.94-48.98,8.59-.03,15.39-8.38,11.47-23.2,4.92-6.79,23.03-21.2,11.55-42.86-3.59-5.82-12.91-17.22-21.53-18.56-7.91-5.25-48.45-39.27-66.82-46.02-18.43-16.46-95.33-76.78-106.17-86.09s-93.15-94.51-113.6-101.69c-8.52-9.88-61.03-75.46-73.5-79.42,10.17-3.87,68.57-23.65,90.58-72.74,24.72-21.74,54.39-59.71,37.87-138.79-2.75-7.73-8.38-11.6-8.91,5.19s-17.15,66.74-21.54,76.45c-3.38-16.54-10.4-79.66-50.48-80.16-10.81-.87-8.34,7.34-0.74,10.39s19.85,11.62,20.78,35.63,6.05,62.59-4.45,68.29-90.34,37.08-125.47,40.08c-34.31-7.9-94.29-27.47-94.29-27.47s81.95-57.31,72.01-101.68c-3.39-.94-5.65,13.62-15.59,20.04s-86.78,60.9-98.74,62.35c-9.58-11.46-33.65-39.45-31.19-55.67,6.07-5.11,25.32-28.82,40.84-66.06,18.26-43.85,31.68-102.99,17.07-121.73-9.89,12.15-19.03,45.19-23.75,57.9s-29.43,81.25-51.23,92.03c-25.95,18.86-70.91,8.32-89.84-3.71,2.25-26.55,12.37-96.03,14.85-113.56s14.84-80.05,15.59-109.1c3.98-26.54,11.71-110.975,13.36-118.019,3.26-9.181,11.48-44.01,7.43-65.316-1.05-20.36-.11-37.7-7.43-37.111s-6.31,30.682-8.9,42.307-17.37,61.012-25.25,91.289-19.11,181.12-54.94,181.11c-34.29-10.76-39.99-40.85-42.32-60.86,4.27-30.93,5.2-68.29,5.2-68.29s9.76-166.817,11.13-189.268c5.8-28.478,47.52-112.818,47.52-112.818s2.9-15.812-11.14-9.649c-3.96,6.154-7.42,12.618-7.42,12.618s-7.53-14.084-18.56-2.969c-3.4,9.743-7.22,14.941-12.62,23.751s-22.21,49.534-32.67,61.6-27.87,35.391-36.38,35.627-34.024-3.234-42.32-20.04-11.879-24.494-11.879-24.494-10.207-4.162-8.909,5.2,1.182,19.325,11.137,25.236c-16.942-7.8-47.9-36.606-51.972-34.885s-23.319,34.877,70.533,75.707c6.152,4.948,27.99,35.66,23.76,67.543-9.293,28.68-16.85,31.69-19.306,37.11s-3.356,21.6-14.106,27.46-30.694,17.57-50.487-4.45-23.974-28.72-25.243-37.85-16.959-102.412-6.682-135.831,36.126-69.617,28.213-80.161c-12.655,2.373-27.649,26.951-33.41,34.143s-15.59,15.452-41.577,97.974C828.617,956.02,817.069,997.39,795,1015.48c-23.934,10.52-61.665,26.99-80.927,26.72s-45.289-13.36-45.289-13.36l-8.167,11.88,6.682,8.91s36.442,21.7,65.335,23c29.439,4.38,53.577,20.33,61.623,40.09s8.91,17.07,8.91,17.07,35.984,62.06-31.183,84.61c-56.425,12.22-57.168-1.48-57.168-1.48s-36.881-92.96-40.835-89.81c-11.689,9.91,6.544,71.81,6.682,96.49-0.532,39.07-31.738,51.59-25.986,77.93,4.575,9.76,16.965-16.74,42.32-14.84s53.713,2.71,115.079-8.17c73.9,4.64,167.618,5.79,199.714,31.17s53.81,40.93,60.89,44.54c7.67,13.97,7.15,69.19,146.26,121.72a248.57,248.57,0,0,1,37.86,37.86l-68.3-15.59s-62.93-47.79-92.81-25.98c-26.24-13.74-64.92-35.54-72.02-5.19,12.14,38.8,16.03,76.51,60.88,122.46s69.48,80.08,82.42,84.62c-13.21,26.17-85.42,228.28-113.6,282.05S992.754,2012.71,994,2053Z" transform="translate(-350 -320) scale(0.8)"/>
+                <!-- translate(-639 -750) -->
+                </clipPath>
+              </defs>
+              </svg>
+              <video autoplay controls src="static/images/lesnoe.mp4" style="height: 100%"></video>
+            </div>
+
+            <div class="form__title">
+              Бронирование номеров
+            </div>
+            <div class="form__item">
+              <div class="form__input">
+                <div class="input__icon">
+                  <img src="static/images/date.png" alt="">
+                </div>
+                <div class="">
+                  <label class="input__title"  for="date_in">Заезд</label>
+                  <input type="text" name="date_in" class="datepicker" value="">
+                </div>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="form__input">
+                <div class="input__icon">
+                  <img src="static/images/date.png" alt="">
+                </div>
+                <div class="">
+                  <label class="input__title" for="date_out">Выезд</label>
+                  <input type="text" name="date_out" class="datepicker" value="">
+                </div>
+              </div>
+            </div>
+            <div class="form__item">
+              <div class="form__input input_count">
+                <div class="input__icon">
+                  <img src="static/images/people.png" alt="">
+                </div>
+                <div class="">
+                  <label class="input__title" for="count">Гости</label>
+                  <input type="number" name="count" value="1" class="">
+                </div>
+              </div>
+            </div>
+            <div class="form__item">
+              <button type="submit" name="button" class="form__input form__input_button button">Найти номер</button>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+    $(function(){
+    	$(".datepicker").datepicker();
+    	$(".datepicker").datepicker("setDate", new Date());
+    });
+    </script>
+  </body>
+</html>
